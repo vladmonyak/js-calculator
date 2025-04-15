@@ -56,9 +56,44 @@ body {
   position: absolute;
   top: 16px;
   left: 16px;
+  z-index: 200;
 }
 
 .calculator__history {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 460px;
+  font-size: 16px;
+  background-color: #202020;
+  padding: 52px 16px 16px 16px;
+  overflow-y: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+.calculator__history-entry {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.calculator__history-expression,
+.calculator__history-result {
+  border: 1px solid #6B6B6D;
+  padding: 4px 12px;
+  margin-right: 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.calculator__history-result {
+  margin-left: 8px;
+}
+
+.calculator__calculations {
   padding: 0 20px 12px 20px;
   color: #A6A6A6;
 }
