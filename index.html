@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="calculator__screen">
+      <button class="calculator__icon" aria-label="Open calculation history">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.333 4C14.1504 4 11.0982 5.26428 8.84773 7.51472C6.59729 9.76515 5.33301 12.8174 5.33301 16H1.33301L6.51967 21.1867L6.61301 21.3733L11.9997 16H7.99967C7.99967 10.84 12.173 6.66667 17.333 6.66667C22.493 6.66667 26.6663 10.84 26.6663 16C26.6663 21.16 22.493 25.3333 17.333 25.3333C14.7597 25.3333 12.4263 24.28 10.7463 22.5867L8.85301 24.48C9.96423 25.5973 11.2857 26.4837 12.7411 27.0878C14.1965 27.6919 15.7572 28.002 17.333 28C20.5156 28 23.5679 26.7357 25.8183 24.4853C28.0687 22.2348 29.333 19.1826 29.333 16C29.333 12.8174 28.0687 9.76515 25.8183 7.51472C23.5679 5.26428 20.5156 4 17.333 4ZM15.9997 10.6667V17.3333L21.7063 20.72L22.6663 19.1067L17.9997 16.3333V10.6667H15.9997Z" fill="#FFB341"/>
+        </svg>
+      </button>
+      <p class="calculator__expression"></p>
+      <output class="calculator__result">0</output>
+    </div>
+    <div class="calculator__buttons-wrapper">
+      <button class="calculator__button calculator__button--function">AC</button>
+      <button class="calculator__button calculator__button--function"><sup>+</sup>/<sub>−</sub></button>
+      <button class="calculator__button calculator__button--function">%</button>
+      <button class="calculator__button calculator__button--operator">÷</button>
+      <button class="calculator__button">7</button>
+      <button class="calculator__button">8</button>
+      <button class="calculator__button">9</button>
+      <button class="calculator__button calculator__button--operator">×</button>
+      <button class="calculator__button">4</button>
+      <button class="calculator__button">5</button>
+      <button class="calculator__button">6</button>
+      <button class="calculator__button calculator__button--operator">−</button>
+      <button class="calculator__button">1</button>
+      <button class="calculator__button">2</button>
+      <button class="calculator__button">3</button>
+      <button class="calculator__button calculator__button--operator">+</button>
+      <button class="calculator__button calculator__button--long">0</button>
+      <button class="calculator__button">,</button>
+      <button class="calculator__button calculator__button--operator">=</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

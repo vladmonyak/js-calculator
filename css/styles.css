@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url(./fonts/sf-pro-display-regular.woff2), format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 32px;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+.calculator {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  row-gap: 10px;
+  width: 430px;
+  height: 720px;
+  padding: 20px;
+  text-align: right;
+  background-color: #000000;
+  border-radius: 25px;
+}
+
+.calculator__icon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: transparent;
+  border: none;
+}
+
+.calculator__expression {
+  color: #B2B2B4;
+}
+
+.calculator__result {
+  font-size: 80px;
+  color: #FFFFFF;
+}
+
+.calculator__buttons-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.calculator__button {
+  height: 86px;
+  color: #FFFFFF;
+  background-color: #343434;
+  border: none;
+  border-radius: 50%;
+}
+
+.calculator__button--function {
+  background-color: #717173;
+}
+
+.calculator__button--operator {
+  font-size: 48px;
+  background-color: #FFB341;
+}
+
+.calculator__button--long {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  grid-column: span 2;
+  padding-left: 35px;
+  border-radius: 99px;
+}
